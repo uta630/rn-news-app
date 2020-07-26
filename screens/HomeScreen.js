@@ -13,7 +13,8 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen = () => {
+export default HomeScreen = (props) => {
+  const { navigation } = props
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -38,6 +39,7 @@ export default HomeScreen = () => {
             imageUrl={item.urlToImage}
             title={item.title}
             author={item.author}
+            onPress={() => navigation.navigate("Article")} // Stack.Screen name
           />
         )}
         keyExtractor={(item, index) => index.toString()}
