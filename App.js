@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { StyleSheet, FlatList, SafeAreaView } from "react-native";
 import ListItem from "./components/ListItem";
 import dummyArticles from "./dummies/articles.json";
+import Constants from "expo-constants";
 
 const styles = StyleSheet.create({
   container: {
