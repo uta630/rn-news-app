@@ -19,20 +19,18 @@ const HomeStack = () => {
         component={HomeScreen}
         options={{ headerShown: false }}
       />
-      <Stack.Screen
-        name="Article"
-        component={ArticleScreen}
-      />
+      <Stack.Screen name="Article" component={ArticleScreen} />
     </Stack.Navigator>
-  )
+  );
 }
 
 const ClipStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Clip" component={ClipScreen} />
+      <Stack.Screen name="Article" component={ArticleScreen} />
     </Stack.Navigator>
-  )
+  );
 }
 
 const screenOption = ({route}) => ({
