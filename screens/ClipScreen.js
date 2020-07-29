@@ -24,9 +24,9 @@ export default ClipScreen = ({ navigation }) => {
             title={item.title}
             author={item.author}
             onPress={() => navigation.navigate("Article", { article: item })} // Stack.Screen name
-            keyExtractor={(item, index) => index.toString()}
           />
         )}
+        keyExtractor={(item, index) => index.toString()}
       />
     </SafeAreaView>
   );
