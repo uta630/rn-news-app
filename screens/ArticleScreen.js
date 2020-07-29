@@ -1,10 +1,8 @@
 import React from "react";
-import { FontAwesome } from '@expo/vector-icons'
-import { StyleSheet, SafeAreaView, Text, TouchableOpacity } from "react-native";
+import { StyleSheet, SafeAreaView } from "react-native";
 import { WebView } from "react-native-webview"
 import { useDispatch, useSelector } from 'react-redux'
 import { addClip, deleteClip } from '../store/actions/user'
-import ClipScreen from "./ClipScreen";
 import ClipButton from "../components/ClipButton"
 
 const styles = StyleSheet.create({
